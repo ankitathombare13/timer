@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+       // setInterval(function(){
+          //  console.log('Hii im set interval...');//again and again
+       // },3000)
+       // setTimeout(function(){
+        //    console.log('Hii im set time out...');//one bar execute
+       // },2000)
+
+        let date=new Date()
+       console.log( date.getSeconds());  //date.getSeconds()//method of date
+
+       setInterval(function(){
+        let date=new Date()
+       document.querySelector('#result').innerText=date.getSeconds();
+       },1000)
+       
+    </script>
+</body>
+</html>
